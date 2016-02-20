@@ -1,0 +1,311 @@
+.container {
+  max-width: 970px;
+}
+
+.btn {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  padding: 10px 20px;
+}
+
+.btn-lg {
+  padding: 12px 24px;
+  font-size: 18px;
+  line-height: 1.33333;
+}
+
+section {
+  padding: 100px 0;
+
+  h1 {
+    /* Что такое Экспресс-к: */
+    font-family: Roboto-Light;
+    font-size: 36px;
+    color: #353535;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+
+  h2 {
+    /* Твоя жизнь начинает : */
+    font-family: Roboto-Light;
+    font-size: 20px;
+    color: #454545;
+    line-height: 24px;
+  }
+
+  .lead {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h1 + .lead {
+    margin-top: -20px;
+  }
+
+  p, td, li {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+#front {
+  background-image: url('/images/bg-color-paper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+
+  h1 {
+    /* Наполни свою жизнь с: */
+    font-family: Roboto-Bold;
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 42px;
+  }
+
+  .lead {
+    /* поможем выбрать дело: */
+    font-family: Roboto-Light;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+}
+
+#what {
+  .row {
+    margin-top: 50px;
+
+    img {
+      margin: 25px 0;
+    }
+  }
+}
+
+#numbers {
+  background-image: url('/images/bg-color-paper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .number {
+    /* 12: */
+    font-family: Roboto-Regular;
+    font-size: 72px;
+    color: #FFFFFF;
+    line-height: 85px;
+  }
+  .text {
+    /* лет опыта: */
+    font-family: Roboto-Light;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 21px;
+  }
+}
+
+#how {
+  .item {
+    margin-bottom: 50px;
+    clear: both;
+    min-height: 110px;
+
+    .item-body {
+      margin-left: 130px;
+      padding-top: 1px;
+
+      h2 {
+        margin-top: 20px;
+      }
+    }
+
+    img {
+      float: left;
+    }
+  }
+}
+
+#get {
+  .box {
+    /* card: */
+    background: #FAFAFA;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12);
+    border-radius: 2px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+
+    img {
+      margin-top: -75px;
+    }
+
+    h2 {
+      /* Файл PDF с вопросами: */
+      font-family: Roboto-Light;
+      font-size: 24px;
+      color: rgba(0,0,0,0.87);
+      line-height: 34px;
+    }
+
+    p {
+      /* Ты сможешь скачать е: */
+      font-family: Roboto-Regular;
+      font-size: 14px;
+      color: #999999;
+      line-height: 24px;
+    }
+  }
+}
+
+#gives {
+  td {
+    vertical-align: center;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  td.img {
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+  }
+
+  td.text {
+    padding-left: 10px;
+  }
+}
+
+#why {
+  background: #FAFAFA;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12);
+  border-radius: 2px;
+}
+
+.review {
+  .quote {
+    float: left;
+    width: 54px;
+    height: 46px;
+  }
+
+  p {
+    margin-left: 87px;
+  }
+}
+
+#advantages {
+  img {
+    width: 42px;
+    height: 40px;
+    margin: 25px 0;
+  }
+}
+
+#who {
+  .lead {
+    margin-bottom: 10px;
+  }
+  .who-text {
+    margin-top: 10px;
+  }
+  img.me {
+    margin-top: 30px;
+  }
+}
+
+#next {
+  img {
+    width: 96px;
+    height: 98px;
+    margin: 20px;
+  }
+}
+
+#whom {
+  background: #FAFAFA;
+
+  img {
+    width: 45px;
+    height: 45px;
+    margin: 20px;
+  }
+}
+
+#bonus {
+  background-image: url('/images/bg-color-paper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  .img {
+    text-align: right;
+
+    img {
+      width: 77px;
+      height: 134px;
+      margin: 28px;
+    }
+  }
+
+  h1, .lead {
+    color: white;
+    text-align: left;
+  }
+}
+
+#timer {
+  .numbers {
+    font-family: Roboto-Regular;
+    font-size: 72px;
+    line-height: 85px;
+    margin-bottom: 50px;
+  }
+}
+
+#cta {
+  background: #454545;
+
+  h1 {
+    font-family: Roboto-Light;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 50px;
+    text-align: left;
+  }
+
+  table {
+    margin: 0 20px;
+  }
+}
+
+#footer {
+  background: #000000;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #A7A7A7;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  margin: 0;
+  padding: 20px;
+}
+
+#buy {
+  .modal-body {
+    margin-bottom: 20px;
+
+    .payment-option + .payment-option {
+      border-top: solid #FAFAFA 1px;
+      margin-top: 10px;
+    }
+  }
+}
