@@ -1,6 +1,7 @@
 $zoom: 1.44;
 $primarycolor: #7044BD;
 $btn-primary-bg: $primarycolor;
+$font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 .narrow {
   width: 90%;
@@ -16,7 +17,8 @@ $btn-primary-bg: $primarycolor;
 }
 
 .btn {
-  font-family: Roboto-Regular;
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
   font-size: 14px * $zoom;
   color: #FFFFFF;
   letter-spacing: 0.5px;
@@ -35,7 +37,8 @@ section {
 
   h1 {
     /* Что такое Экспресс-к: */
-    font-family: Roboto-Light;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
     font-size: 52px;
     color: #353535;
     text-align: center;
@@ -45,7 +48,8 @@ section {
 
   h2 {
     /* Твоя жизнь начинает : */
-    font-family: Roboto-Light;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
     font-size: 20px * $zoom;
     color: #454545;
     line-height: 24px * $zoom;
@@ -79,7 +83,8 @@ section {
 
   h1 {
     /* Наполни свою жизнь с: */
-    font-family: Roboto-Bold;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
     font-size: 36px * $zoom;
     color: #FFFFFF;
     line-height: 42px * $zoom;
@@ -87,7 +92,8 @@ section {
 
   .lead {
     /* поможем выбрать дело: */
-    font-family: Roboto-Light;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
     font-size: 24px * $zoom;
     color: #FFFFFF;
     line-height: 28px * $zoom;
@@ -119,14 +125,16 @@ section {
 
   .number {
     /* 12: */
-    font-family: Roboto-Regular;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
     font-size: 72px * $zoom;
     color: #FFFFFF;
     line-height: 85px * $zoom;
   }
   .text {
     /* лет опыта: */
-    font-family: Roboto-Light;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
     font-size: 18px * $zoom;
     color: #FFFFFF;
     line-height: 21px * $zoom;
@@ -177,7 +185,8 @@ section {
 
     h2 {
       /* Файл PDF с вопросами: */
-      font-family: Roboto-Light;
+      font-family: $font-family-sans-serif;
+      font-weight: 300;
       font-size: 24px * $zoom;
       color: rgba(0,0,0,0.87);
       line-height: 34px * $zoom;
@@ -186,7 +195,8 @@ section {
 
     p {
       /* Ты сможешь скачать е: */
-      font-family: Roboto-Regular;
+      font-family: $font-family-sans-serif;
+      font-weight: 400;
       font-size: 14px * $zoom;
       color: #999999;
       line-height: 24px * $zoom;
@@ -314,7 +324,8 @@ section {
 
 #timer {
   .numbers {
-    font-family: Roboto-Regular;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
     font-size: 72px * $zoom;
     line-height: 85px * $zoom;
     margin-bottom: 50px;
@@ -325,7 +336,8 @@ section {
   background: #454545;
 
   h1 {
-    font-family: Roboto-Light;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
     font-size: 24px * $zoom;
     color: #FFFFFF;
     line-height: 50px * $zoom;
@@ -339,7 +351,8 @@ section {
 
 #footer {
   background: #000000;
-  font-family: Roboto-Regular;
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
   font-size: 14px * $zoom;
   color: #A7A7A7;
   letter-spacing: 0.5px;
