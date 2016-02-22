@@ -60,4 +60,4 @@ gulp.task('watch', function() {
 });
 
 // for i in {1..12}; do convert gives-icon-$i.png -gravity center -background none -extent 180x180 gives-icon-$i-extend.png; done
-// for i in {1..3}; do convert whom-icon-$i.png -gravity center -background none -extent 145x145 whom-icon-$i-extend.png; done
+// for i in {1..3}; do convert whom-icon-$i.png -gravity center -background none -extent 192x192 whom-icon-$i-extend.png; done

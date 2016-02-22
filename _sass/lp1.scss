@@ -3,6 +3,12 @@ $primarycolor: #7044BD;
 $btn-primary-bg: $primarycolor;
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
+@mixin gray-section {
+  background: #FAFAFA;
+  border-top: solid #eee 1px;
+  border-bottom: solid #eee 1px;
+}
+
 .narrow {
   width: 90%;
   margin-left: 5%;
@@ -30,6 +36,16 @@ $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-seri
   padding: 12px 24px;
   font-size: 18px * $zoom;
   line-height: 1.33333 * $zoom;
+}
+
+@mixin default-font {
+  font-size: 19px;
+  line-height: 1.7;
+  font-weight: normal;
+}
+
+body {
+  @include default-font;
 }
 
 section {
@@ -67,42 +83,46 @@ section {
   }
 
   p, td, li {
-    font-size: 19px;
-    line-height: 1.7;
-    font-weight: normal;
+    @include default-font;
   }
 }
 
-#front {
+#hero {
   background-image: url('/images/bg-color-paper.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
+  //padding: 200px 0;
+
+  @media (max-height: 1000px) {
+    min-height: 100vh;
+  }
   text-align: center;
   color: white;
 
-  h1 {
-    /* Наполни свою жизнь с: */
-    font-family: $font-family-sans-serif;
-    font-weight: 700;
-    font-size: 36px * $zoom;
-    color: #FFFFFF;
-    line-height: 42px * $zoom;
-  }
+  .container {
+    h1 {
+      /* Наполни свою жизнь с: */
+      font-family: $font-family-sans-serif;
+      font-weight: 700;
+      font-size: 36px * $zoom;
+      color: #FFFFFF;
+      line-height: 42px * $zoom;
+    }
 
-  .lead {
-    /* поможем выбрать дело: */
-    font-family: $font-family-sans-serif;
-    font-weight: 300;
-    font-size: 24px * $zoom;
-    color: #FFFFFF;
-    line-height: 28px * $zoom;
-    margin-top: 20px * $zoom;
-    margin-bottom: 50px * $zoom;
-  }
+    .lead {
+      /* поможем выбрать дело: */
+      font-family: $font-family-sans-serif;
+      font-weight: 300;
+      font-size: 24px * $zoom;
+      color: #FFFFFF;
+      line-height: 28px * $zoom;
+      margin-top: 20px * $zoom;
+      margin-bottom: 50px * $zoom;
+    }
 
-  .btn + .btn {
-    margin-left: 20px;
+    .btn + .btn {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -141,6 +161,98 @@ section {
   }
 }
 
+#why {
+  @include gray-section;
+
+  border-top: none;
+
+  padding: 0;
+  background-image: url(/images/sailboat_in_the_sea-min-2x.jpg);
+  background-size: auto 510px;
+  background-position: top right 600px;
+  background-repeat: no-repeat;
+
+  h1 {
+    text-align: left;
+  }
+
+  .text {
+    padding: 50px;
+    padding-left: 70px;
+    width: 600px;
+    float: right;
+  }
+}
+
+#gives {
+  td {
+    vertical-align: center;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 10px;
+
+    font-size: 22.5px;
+  }
+
+  td.img {
+    img {
+      width: 90px;
+      height: 90px;
+      margin: 15px;
+    }
+  }
+
+  td.text {
+    padding-left: 10px;
+  }
+}
+
+.cta {
+  background: $primarycolor;
+  text-align: center;
+
+  .btn-default {
+    color: black;
+  }
+}
+
+.review {
+  margin-bottom: 25px;
+
+  .quote {
+    float: left;
+    width: 54px;
+    height: 46px;
+  }
+
+  p {
+    margin-left: 87px;
+  }
+
+  .signature {
+    margin-left: 87px;
+    height: 150px;
+
+    img {
+      width: 112px;
+      height: 112px;
+      float: left;
+      margin-top: -18px;
+    }
+
+    .name {
+      margin-left: 150px;
+      margin-top: 50px;
+      font-weight: 500;
+    }
+
+    .ref {
+      margin-left: 150px;
+      margin-top: 10px;
+    }
+  }
+}
+
 #how {
   .item {
     margin-bottom: 75px;
@@ -164,16 +276,38 @@ section {
   }
 }
 
-#get {
-  padding-top: 0px;
+#who {
+  img.me {
+    margin-top: 30px;
+  }
 
+  ul {
+    margin-top: 40px;
+  }
+}
+
+#whom {
+  @include gray-section;
+
+  img {
+    width: 96px;
+    height: 96px;
+    margin: 25px 0;
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+#get {
   .box {
     /* card: */
     background: #FAFAFA;
     box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.5);
     border-radius: 2px;
     text-align: center;
-    padding: 1px;
+    padding: 20px;
     margin: 20px;
     margin-top: 100px;
 
@@ -204,65 +338,9 @@ section {
   }
 }
 
-#gives {
-  td {
-    vertical-align: center;
-    height: 60px;
-    padding: 0;
-    margin-bottom: 10px;
-
-    font-size: 22.5px;
-  }
-
-  td.img {
-    img {
-      width: 90px;
-      height: 90px;
-      margin: 15px;
-    }
-  }
-
-  td.text {
-    padding-left: 10px;
-  }
-}
-
-#why {
-  margin-top: 50px;
-  background-color: #FAFAFA;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
-  border-radius: 2px;
-  padding: 0;
-  background-image: url(/images/sailboat_in_the_sea-min-2x.jpg);
-  background-size: auto 510px;
-  background-position: top right 600px;
-  background-repeat: no-repeat;
-
-  h1 {
-    text-align: left;
-  }
-
-  .text {
-    padding: 50px;
-    padding-left: 70px;
-    width: 600px;
-    float: right;
-  }
-}
-
-.review {
-  .quote {
-    float: left;
-    width: 54px;
-    height: 46px;
-  }
-
-  p {
-    margin-left: 87px;
-  }
-}
-
 #advantages {
+  @include gray-section;
+
   img {
     width: 42px;
     height: 40px;
@@ -270,32 +348,10 @@ section {
   }
 }
 
-#who {
-  .lead {
-    margin-bottom: 10px;
-  }
-  .who-text {
-    margin-top: 10px;
-  }
-  img.me {
-    margin-top: 30px;
-  }
-}
-
 #next {
   img {
     width: 96px;
     height: 98px;
-    margin: 20px;
-  }
-}
-
-#whom {
-  background: #FAFAFA;
-
-  img {
-    width: 45px;
-    height: 45px;
     margin: 20px;
   }
 }
@@ -332,7 +388,7 @@ section {
   }
 }
 
-#cta {
+#cta-final {
   background: #454545;
 
   h1 {
@@ -366,8 +422,7 @@ section {
     margin-bottom: 20px;
 
     .payment-option + .payment-option {
-      border-top: solid #FAFAFA 1px;
-      margin-top: 10px;
+      margin-top: 40px;
     }
   }
 }
