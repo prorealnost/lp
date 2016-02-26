@@ -52,11 +52,13 @@ section {
   padding: 100px 0;
 
   h1 {
-    /* Что такое Экспресс-к: */
     font-family: $font-family-sans-serif;
-    font-weight: 300;
+
+    font-family: Roboto-Black;
     font-size: 52px;
-    color: #353535;
+    color: #454545;
+    line-height: 1.44;
+
     text-align: center;
     margin-bottom: 50px;
     margin-top: 40px;
@@ -67,7 +69,8 @@ section {
     font-weight: 300;
     font-size: 34px;
     line-height: 48px;
-    color: #454545;
+    color: $primarycolor;
+    margin: 50px 0;
   }
 
   .lead {
@@ -87,43 +90,79 @@ section {
 }
 
 #hero {
-  background-image: url('/images/bg-color-paper.jpg');
+  background-image: url('/images/lp2/tm-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  //padding: 200px 0;
 
-  @media (max-height: 1000px) {
-    min-height: 100vh;
-  }
-  text-align: center;
-  color: white;
-
-  .container {
-    h1 {
-      /* Наполни свою жизнь с: */
-      font-family: $font-family-sans-serif;
-      font-weight: 700;
-      font-size: 36px * $zoom;
-      color: #FFFFFF;
-      line-height: 42px * $zoom;
-    }
-
-    .lead {
-      /* поможем выбрать дело: */
-      font-family: $font-family-sans-serif;
-      font-weight: 300;
-      font-size: 24px * $zoom;
-      color: #FFFFFF;
-      line-height: 28px * $zoom;
-      margin-top: 20px * $zoom;
-      margin-bottom: 50px * $zoom;
-    }
-
-    .btn + .btn {
-      margin-left: 20px;
-    }
+  h1 {
+    background-color: white;
+    padding: 20px;
+    line-height: 1.44;
   }
 }
+
+.cta {
+  background: $primarycolor;
+  text-align: center;
+  padding: 50px 0;
+
+  h1 {
+    color: white;
+  }
+}
+
+#jumbo {
+  img {
+    margin: 30px;
+  }
+}
+
+#whom {
+  @include gray-section;
+}
+
+#notalone {
+  text-align: center;
+  .ninety {
+    /* 90% людей: */
+    font-family: Roboto-Light;
+    font-size: 72px * $zoom;
+    margin: 80px 0;
+  }
+}
+
+#method {
+  @include gray-section;
+
+  img {
+    margin: 25px 0;
+    width: 111px;
+    height: 111px;
+  }
+}
+
+#find {
+  img {
+    width: 82px;
+    height: 82px;
+    margin: 15px;
+  }
+}
+
+#how {
+  img {
+    width: 72px;
+    height: 54px;
+    margin: 15px;
+  }
+}
+
+#effect {
+  .row + .row {
+    margin-top: 100px;
+  }
+}
+/*
 
 #what {
   .row {
@@ -143,7 +182,6 @@ section {
   background-size: cover;
 
   .number {
-    /* 12: */
     font-family: $font-family-sans-serif;
     font-weight: 400;
     font-size: 72px * $zoom;
@@ -151,7 +189,6 @@ section {
     line-height: 85px * $zoom;
   }
   .text {
-    /* лет опыта: */
     font-family: $font-family-sans-serif;
     font-weight: 300;
     font-size: 18px * $zoom;
@@ -203,15 +240,6 @@ section {
 
   td.text {
     padding-left: 10px;
-  }
-}
-
-.cta {
-  background: $primarycolor;
-  text-align: center;
-
-  .btn-default {
-    color: black;
   }
 }
 
@@ -293,7 +321,6 @@ section {
 
 #get {
   .box {
-    /* card: */
     background: #FAFAFA;
     box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.5);
     border-radius: 2px;
@@ -309,7 +336,6 @@ section {
     }
 
     h2 {
-      /* Файл PDF с вопросами: */
       font-family: $font-family-sans-serif;
       font-weight: 300;
       font-size: 34px;
@@ -319,7 +345,6 @@ section {
     }
 
     p {
-      /* Ты сможешь скачать е: */
       font-family: $font-family-sans-serif;
       font-weight: 400;
       font-size: 14px * $zoom;
@@ -417,3 +442,4 @@ section {
     }
   }
 }
+*/

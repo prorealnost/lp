@@ -35,13 +35,13 @@ gulp.task('html', function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src(['./images/*'])
+  return gulp.src(['./images/**/*'])
     .pipe( connect.reload() )
     .pipe( gulp.dest('./_site/images') )
 });
 
 gulp.task('vendor', function() {
-  return gulp.src(['./vendor/*'])
+  return gulp.src(['./vendor/**/*'])
     .pipe( connect.reload() )
     .pipe( gulp.dest('./_site/vendor') )
 });
@@ -61,3 +61,8 @@ gulp.task('watch', function() {
 
 // for i in {1..12}; do convert gives-icon-$i.png -gravity center -background none -extent 180x180 gives-icon-$i-extend.png; done
 // for i in {1..3}; do convert whom-icon-$i.png -gravity center -background none -extent 192x192 whom-icon-$i-extend.png; done
+// for i in {1..3}; do convert how-icon-1-$i.png -gravity center -background none -extent 160x160 how-icon-1-$i-extend.png; done
+// for i in {1..2}; do convert how-icon-2-$i.png -gravity center -background none -extent 160x160 how-icon-2-$i-extend.png; done
+
+// for i in {1..3}; do convert method-icon-$i.png -gravity center -background none -extent 222x222 method-icon-$i-extend.png; done
+// for i in {1..6}; do convert find-icon-$i.png -gravity center -background none -extent 165x165 find-icon-$i-extend.png; done
