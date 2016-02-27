@@ -157,6 +157,18 @@ section {
   }
 }
 
+#who {
+  @include gray-section;
+
+  img.me {
+    margin-top: 30px;
+  }
+
+  p {
+    margin: 40px 0;
+  }
+}
+
 #effect {
   .row + .row {
     margin-top: 100px;
